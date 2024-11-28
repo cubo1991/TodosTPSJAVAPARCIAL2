@@ -1,0 +1,21 @@
+Siempre recordá que lo importante es como se asocian entre si las clases:
+
+En el ejemplo de alumno, todos los alumnos van a tener notas y ese "notas" va a tener N cantidad de Nota entonces:
+
+                                    Clase Alumno
+                                         ↑
+                              ArrayList/HashSet/HasMap Notas
+                                         ↑
+                                     Clase Nota
+
+
+Es importante recordar que para guardar una Nota en notas se hace con el metodo add o el metodo put (segun corresponda)
+Ejemplo ArrayList y hashSet: notasAlumnos.add(notaMateria) notas
+Ejemplo HashMap: notasAlumnos.put("Java", 10)
+
+Mientras que para agregar una coleccion a una clase, tenes que usar el metodo set correspondiente
+Ejemplo: Alumno.setNotas(notasAlumnos)
+
+
+
+
